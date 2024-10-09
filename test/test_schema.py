@@ -1,9 +1,10 @@
-"""Arquivo de teste de schema"""
+"""Arquivo de teste do schema definido."""
 
 from datetime import datetime
 
 import pytest
 from pydantic import ValidationError
+
 from src.schema import ContratoFuncionarios
 
 
@@ -30,7 +31,7 @@ def test_validar_contrato():
 
 
 def test_email_invalidos_contrato_funcionario():
-    """Teste para validar o schema de dados é invalido."""
+    """Testa se o schema de dados é invalido."""
     dados_invalidos = {
         "id": 1,
         "nome": "Luciano Borba",
@@ -45,7 +46,7 @@ def test_email_invalidos_contrato_funcionario():
 
 
 def test__n_negativo_dados_invalidos():
-    """Teste para validar o schema de dados é invalido."""
+    """Testa se o schema de dados é invalido."""
     dados_invalidos = {
         "id": -1,
         "nome": "Luciano Borba",
