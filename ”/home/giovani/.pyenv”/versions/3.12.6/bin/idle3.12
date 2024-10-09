@@ -1,0 +1,5 @@
+#!/media/giovani/b60fac53-771c-4765-bb57-46eba1a734aa/dados/git/treino_streamlit/”/home/giovani/.pyenv”/versions/3.12.6/bin/python3.12
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

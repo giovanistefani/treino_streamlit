@@ -1,0 +1,13 @@
+# See: man pkg-config
+prefix=/media/giovani/b60fac53-771c-4765-bb57-46eba1a734aa/dados/git/treino_streamlit/”/home/giovani/.pyenv”/versions/3.12.6
+exec_prefix=${prefix}
+libdir=/media/giovani/b60fac53-771c-4765-bb57-46eba1a734aa/dados/git/treino_streamlit/”/home/giovani/.pyenv”/versions/3.12.6/lib
+includedir=${prefix}/include
+
+Name: Python
+Description: Embed Python into an application
+Requires:
+Version: 3.12
+Libs.private: -ldl -L/media/giovani/b60fac53-771c-4765-bb57-46eba1a734aa/dados/git/treino_streamlit/”/home/giovani/.pyenv”/versions/3.12.6/lib -Wl,-rpath,/media/giovani/b60fac53-771c-4765-bb57-46eba1a734aa/dados/git/treino_streamlit/”/home/giovani/.pyenv”/versions/3.12.6/lib
+Libs: -L${libdir} -lpython3.12
+Cflags: -I${includedir}/python3.12
