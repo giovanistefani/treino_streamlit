@@ -1,14 +1,15 @@
 import subprocess
 
-import pytest 
+import pytest
 from selenium import webdriver
 from time import sleep
 
+
 @pytest.fixture
 def driver():
-    processo = subprocess.Popen(['streamlit', 'run', 'main.py'])
+    processo = subprocess.Popen(["streamlit", "run", "main.py"])
     driver = webdriver.Chrome()
-    driver.get('http://localhost:8501')
+    driver.get("http://localhost:8501")
     driver.set_page_load_timeout(10)
 
     yield driver
@@ -16,11 +17,13 @@ def driver():
     driver.quit()
     driver.kill()
 
+
 def test_open_app(driver):
-    driver.get('http://localhost:8501')
+    driver.get("http://localhost:8501")
     sleep(2)
 
+
 def test_title_app(driver):
-    driver.get('http://localhost:8501')
+    driver.get("http://localhost:8501")
     sleep(2)
-    assert driver.title == 'Validador de CSV'    
+    assert driver.title == "Validador de CSV"
