@@ -17,7 +17,7 @@ pre-commit = "^4.0.1"
 taskipy = "^1.13.0"
 selenium = "^4.25.0"
 pytest = "^8.3.3"
-pydantic = "^2.9.2"
+pydantic = {extras = ["email"], version = "^2.9.2"}
 sqlalchemy = "^2.0.35"
 
 

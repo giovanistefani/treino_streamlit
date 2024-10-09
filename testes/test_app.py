@@ -1,7 +1,7 @@
 import subprocess
 
 import pytest 
-from selenium import webdrive
+from selenium import webdriver
 from time import sleep
 
 @pytest.fixture
