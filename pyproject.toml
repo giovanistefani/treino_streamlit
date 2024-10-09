@@ -24,3 +24,7 @@ sqlalchemy = "^2.0.35"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "black . && isort ."
+check = "pydocstyle && pip-audit"
